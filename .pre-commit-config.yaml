@@ -1,0 +1,22 @@
+fail_fast: false
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-added-large-files
+        exclude: '^video-js(\..+)?\.css|video(\..+)?\.js|demo.*\.gif$'
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: mixed-line-ending
+      - id: detect-private-key
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v3.14.1
+    hooks:
+      - id: commitizen
+        stages: [ commit-msg ]
+      - id: commitizen-branch
+        stages: [ push ]
+  - repo: https://github.com/google/yapf
+    rev: v0.40.2
+    hooks:
+      - id: yapf

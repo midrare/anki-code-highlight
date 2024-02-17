@@ -1,0 +1,7 @@
+.pdm-python
+*.lock
+*.lck
+*.temp
+*.tmp
+/*.js
+/*.css

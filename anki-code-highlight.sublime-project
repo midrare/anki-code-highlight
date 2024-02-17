@@ -1,0 +1,44 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+			"file_exclude_patterns": [
+				"tags",
+				"//.do_tasks",
+				"//.root",
+				"//.pdm-python",
+                "*.un~",
+                "//meta.json",
+			],
+			"folder_exclude_patterns": [
+				"//.venv",
+				"//venv",
+				"//.idea",
+				"//.hookspace",
+                "__pycache__",
+                ".pytest_cache",
+                ".pdm-build",
+			],
+            "index_exclude_patterns": [
+                "*.css",
+                "*.js",
+            ],
+            "binary_file_patterns": [
+                "*.css",
+                "*.js",
+            ]
+		}
+	],
+    "settings":
+    {
+        "LSP":
+        {
+            "LSP-pyright": {
+                "settings": {
+                    "python.pythonPath": "./.venv/Scripts/python"
+                }
+           }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+[project]
+name = "anki-code-highlight"
+version = "0.1.0"
+description = "Automatic code highlighting for Anki"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "midrare", email = "midrare9@gmail.com" },
+]
+license = { file = "LICENSE.md" }
+keywords = [ "anki" ]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit >= 3.5.0",
+    "pylint >= 3.0.2",
+    "yapf >= 0.40.2",
+]
+test = [
+    "pytest >= 7.4.3",
+    "pytest-cov >= 4.1.0",
+]
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
