@@ -1,6 +1,8 @@
 # anki-code-highlight
 
-Code highlighting for Anki
+**Code highlighting for Anki.**
+
+![Screenshot](screen.png)  
 
 
 ## Getting Started
